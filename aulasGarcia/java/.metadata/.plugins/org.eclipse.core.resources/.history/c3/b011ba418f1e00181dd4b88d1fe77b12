@@ -1,0 +1,10 @@
+
+public class Pessoa extends Churrasco{
+	String nome;
+	String sexo;
+	int idade;
+	boolean vegetariana;	
+	
+		
+	
+}

@@ -1,0 +1,28 @@
+
+public class Churrasco {
+	double qtdCarne;
+	
+public double verificarConsumo(Pessoa p1){
+		
+		/* verifica se a pessoa possui 0 à 3 anos ou é vegetariana, caso sejam não acumula valor e avisa}
+		que o grupo selecionado não consome carne */
+		
+		if((p1.idade >= 0 && p1.idade<= 3) || (p1.vegetariana == true)){
+			System.out.println("Pois é! Este grupo de pessoas não consomem carne!");
+		}else if(p1.idade >=4 && p1.idade <=12){
+		// acumula 1 na quantidade de carne caso idade esteja entre 4 ou 12 anos			
+			this.qtdCarne = this.qtdCarne + 1;
+		}else {
+		// acumula 2 à variável qtdCarne caso nenhuma das opções anteriores seja satisfeita 	
+			this.qtdCarne = this.qtdCarne + 2;
+		}
+		
+		//retorna a qtd de carne consumida no churrasco
+		return this.qtdCarne;
+		
+}
+		
+	
+	
+
+}

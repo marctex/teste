@@ -1,0 +1,29 @@
+
+public class Pessoa {
+	String nome;
+	String sexo;
+	int idade;
+	boolean vegetariana;
+	float qtdCarne;
+	
+	void pessoa(String nome, String sexo, int idade, boolean vegetariana) {
+		
+		this.nome = nome;
+		this.sexo = sexo;
+		this.idade = idade;
+		this.vegetariana = vegetariana;
+	}
+	
+	public double verificarConsumo(){
+			
+			if((idade >= 0 && idade<= 3) ){
+				qtdCarne = 0;
+			}else if(idade >=4 && idade <=12){					
+				qtdCarne = qtdCarne + 1;
+			}else {			
+				qtdCarne = qtdCarne + 2;
+			}
+			return qtdCarne;
+	}
+	
+}

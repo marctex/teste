@@ -1,0 +1,10 @@
+
+public class LigarLampada {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Lampada l1 = new Lampada();
+		l1.ligarInterruptor();
+	}
+
+}

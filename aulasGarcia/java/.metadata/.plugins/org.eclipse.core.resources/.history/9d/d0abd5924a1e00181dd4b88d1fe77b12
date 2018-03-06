@@ -1,0 +1,20 @@
+
+public class Churrasco extends Pessoa {
+	double qtdCarne;
+	
+	double verificarConsumo(){
+		
+		if((idade < 4 || vegetariana == true) ){
+			qtdCarne = 0;
+		}else if(idade < 13){					
+			qtdCarne++;
+		}else {			
+			qtdCarne=+2;
+		}
+		return qtdCarne;
+	}
+}
+		
+	
+
+

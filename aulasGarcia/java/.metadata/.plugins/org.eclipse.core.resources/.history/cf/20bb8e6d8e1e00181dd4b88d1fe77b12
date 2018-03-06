@@ -1,0 +1,34 @@
+
+public class Churrasco  {
+	double qtdCarne;
+	
+void verificarConsumo(int idade, boolean vegetariana){
+		
+		if((idade < 4 || vegetariana == true) ){
+			System.out.println("Não consome carne");
+		}else if(idade < 13){					
+			System.out.println("1 kilo");
+		}else {			
+			System.out.println("2 kilos");
+		}
+		
+	}
+	
+	/*
+	double verificarConsumo(int idade, boolean vegetariana){
+		
+		if((idade < 4 || vegetariana == true) ){
+			qtdCarne = 0;
+		}else if(idade < 13){					
+			qtdCarne++;
+		}else {			
+			qtdCarne=+2;
+		}
+		return qtdCarne;
+	}
+	*/
+}
+		
+	
+
+

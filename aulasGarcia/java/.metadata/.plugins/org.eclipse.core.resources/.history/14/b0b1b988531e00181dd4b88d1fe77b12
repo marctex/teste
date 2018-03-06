@@ -1,0 +1,18 @@
+
+public class Consumacao {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub	
+			
+		Pessoa P1 = new Pessoa();
+		P1.nome = "Marcelo";
+		P1.sexo = "Masculino";
+		P1.idade = 12;
+		P1.vegetariana = false;
+						
+		System.out.println(P1.nome);
+		System.out.println(P1.verificarConsumo(P1.idade, P1.vegetariana));		
+
+	}
+
+}

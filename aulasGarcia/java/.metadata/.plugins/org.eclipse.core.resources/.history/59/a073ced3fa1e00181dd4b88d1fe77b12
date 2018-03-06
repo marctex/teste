@@ -1,0 +1,35 @@
+
+public class Lampada {
+	
+	boolean estadoLampada;
+	boolean interruptor;
+	int contClique= 0;
+	int limClique = 5;
+	
+	boolean checarLampada() {
+		
+		if (contClique == limClique)
+			estadoLampada = false;
+		else
+			estadoLampada = true;		
+		return estadoLampada;
+	}
+	
+	void ligarInterruptor() {
+		
+		if (checarLampada() == true) {
+			System.out.println("Lampada ON");
+			contClique++;
+		}else {
+			System.out.println("Lampada queimada substitua");
+		}
+		
+		System.out.println(contClique);
+	}
+	
+	void desligarInterruptor() {
+		System.out.println("Lampada OFF");
+	}
+	
+	
+}

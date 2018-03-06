@@ -1,0 +1,21 @@
+
+public class Pessoa {
+	String nome;
+	String sexo;
+	int idade;
+	boolean vegetariana;
+	double qtdCarne = 0;
+		
+	double verificarConsumo(){
+			
+		if((idade < 4 || vegetariana == true) ){
+			qtdCarne = 0;
+		}else if(idade < 13){					
+			qtdCarne++;
+		}else {			
+			qtdCarne=+ 2;
+		}
+		return qtdCarne;
+	}
+	
+}
